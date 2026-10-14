@@ -54,9 +54,9 @@
                         </svg>
                     </button>
                 </div>
-                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <div class="items-center justify-between hidden w-full md:flex md:order-1 md:flex md:flex-1" id="navbar-sticky">
                     <ul
-                        class="flex flex-col p-4 md:p-0 mt-4 font-medium  rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary">
+                        class="flex flex-col p-4 md:mt-0 md:w-full md:flex-row md:justify-end md:p-0 font-medium  rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary">
                         <li>
                             <a href="#home"
                                 class="block py-2 px-3 text-white bg-brand rounded-sm md:bg-transparent md:text-fg-brand md:p-0"
@@ -82,20 +82,23 @@
     </header>
 
 
-    <main class="bg-lime-50" id="home">
-        <div class="flex flex-col justify-center items-start gap-4 px-8 py-8 md:max-w-xl">
+    <main class="bg-lime-50 scroll-mt-20 pt-20 min-h-[65vh] flex justify-between flex-col md:flex-row" id="home">
+        <div class="flex flex-col justify-center items-start gap-4 px-8 py-8 md:px-20 lg:px-20 md:max-w-3xl">
             <h3 class="font-inter text-green-500 font-bold uppercase">tudo o que seu pet precisa</h3>
             <h1 class="font-poppins text-3xl text-green-700 font-extrabold">Mais cuidado, mais momentos juntos.</h1>
             <p class="font-inter text-green-700 font-bold">No Pet & Style você encontra os melhores produtos para o
                 bem-estar e a
                 felicidade do seu pet.</p>
-            <button class="bg-green-700 w-fit py-2 px-8 text-orange-100 rounded-3xl font-inter font-bold">Explorar
+            <button class="bg-green-700 w-fit py-2 px-8 text-white rounded-3xl font-inter font-bold">Explorar
                 Produtos</button>
+        </div>
+        <div class="md:pr-20 md:pt-20">
+            <img src="./assets/hero-img.png" alt="">
         </div>
 
     </main>
 
-    <section class="flex flex-col justify-center items-start gap-3 px-8 py-8" id="produtos">
+    <section class="flex flex-col justify-center items-start gap-3 px-8 py-8 md:px-20 lg:px-20 min-h-[65vh] scroll-mt-20" id="produtos">
         <h3 class="font-inter text-green-500 font-bold uppercase">nossos produtos</h3>
         <h2 class="font-poppins text-xl text-green-700 font-extrabold">Produtos em destaque</h1>
             <p class="font-inter text-green-700 text-sm">Qualidade, variedade e tudo o que seu pet merece.</p>
@@ -109,7 +112,7 @@
                         <p class="font-inter text-gray-800 text-sm">Descrição Breve do produto</p>
                         <p class="font-inter text-green-700 font-extrabold">R$ 159,90</p>
                         <button
-                            class="bg-green-700 py-2 px-2 text-orange-100 rounded-3xl font-inter text-white font-bold mt-2">Adicionar</button>
+                            class="bg-green-700 py-2 px-2 text-white rounded-3xl font-inter text-white font-bold mt-2">Adicionar</button>
                     </div>
                 </article>
 
@@ -154,7 +157,7 @@
             </div>
     </section>
 
-    <section class="flex flex-col justify-center items-start gap-3 px-8 py-8  bg-lime-50" id="depoimentos">
+    <section class="flex flex-col justify-center items-start gap-3 px-8 py-8 md:px-20 lg:px-20 bg-lime-50 scroll-mt-20 min-h-[45vh]" id="depoimentos">
         <h3 class="font-inter text-green-500 font-bold uppercase">depoimentos</h3>
         <h2 class="font-poppins text-xl text-green-700 font-extrabold">O que nossos clientes dizem</h1>
             <div class="grid grid-cols-1 md:grid-cols-4 mx-auto gap-4">
@@ -200,8 +203,8 @@
             </div>
     </section>
 
-    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2" id="contato">
-        <div class="bg-green-700 text-white px-8 py-8 flex flex-col justify-center">
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 scroll-mt-20" id="contato">
+        <div class="bg-green-700 text-white px-8 py-8 md:px-20 lg:px-20 flex flex-col justify-center">
             <img src="./assets/logo-footer-white.png" alt="" class="w-60 mb-5">
             <ul class="flex flex-col gap-4">
                 <li class="flex items-center gap-3">
@@ -248,10 +251,11 @@
         <p>© 2026 Estilo Livre, Direitos Reservados.</p>
     </footer>
 
-
+    
     <!-- Flowbite Import -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
-
+    
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
